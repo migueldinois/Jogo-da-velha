@@ -47,12 +47,12 @@ Você precisa ter o [Node.js](https://nodejs.org/) instalado em seu computador (
 
 1. **Clone este repositório:**
    ```bash
-   git clone https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git
+   git clone https://github.com/migueldinois/Jogo-da-velha
    ```
 
 2. **Acesse a pasta do projeto:**
    ```bash
-   cd NOME-DO-REPOSITORIO
+   cd Jogo-da-velha
    ```
 
 3. **Instale as dependências:**
@@ -63,7 +63,6 @@ Você precisa ter o [Node.js](https://nodejs.org/) instalado em seu computador (
 4. **Inicie o servidor de desenvolvimento:**
    ```bash
    npm run dev
-   # ou 'npm start', dependendo de como o projeto foi criado (Vite ou Create React App)
    ```
 
 5. Abra o navegador e acesse o endereço indicado no terminal (geralmente `http://localhost:5173` ou `http://localhost:3000`).
