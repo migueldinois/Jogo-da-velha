@@ -1,5 +1,5 @@
 import Game from "./components/Game/Game";
-
+import 'bootstrap/dist/css/bootstrap.min.css'
 function App(){
   return <Game/>
 }
