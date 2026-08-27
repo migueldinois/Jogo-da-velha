@@ -2,6 +2,8 @@ import Board from '../Board/Board.jsx'
 import Square from '../Square/Square.jsx'
 import { useState } from 'react';
 import Header from '../Header/Header.jsx';
+import '../../styles/variables.css'
+import styles from './Game.module.css'
 
 function Game() {
     const [history, setHistory] = useState([Array(9).fill(null)]);
@@ -36,14 +38,25 @@ function Game() {
     return (
         <>
             <Header></Header>
-            <div className="game">
-                <div className="game-board">
-                    <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
+            <main>
+                <div className={` ${styles.gameContainer}`}>
+                    <div className='row'>
+                        {/* Tabuleiro */}
+                        <div className={`col-12 col-md-6 mb-3 ${styles.tabuleiroContainer}`}>
+                            <div>
+                                <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
+                            </div>
+                        </div>
+
+                        {/* Historico */}
+                        <div className="col-12 col-md-6">
+                            <div className="game-info">
+                                <ol>{moves}</ol>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className="game-info">
-                    <ol>{moves}</ol>
-                </div>
-            </div>
+            </main>
         </>
     );
 }

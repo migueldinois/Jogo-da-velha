@@ -1,0 +1,28 @@
+
+.gameContainer {
+  background-color: var(--bg-secondary);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  height: 92vh;
+  
+  transition: background-color var(--transition-fast);
+  display: flex;
+  justify-content: space-between;
+}
+
+.titulo {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.tabuleiroContainer {
+    background-color: var(--bg-primary);
+    width: 100%;
+    min-height: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
