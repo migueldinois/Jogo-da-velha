@@ -13,25 +13,25 @@
 }
 
 
-.title {
+.titulo {
   color: var(--text-primary);
   font-weight: 700;
 }
 
 
-.themeBtn {
+.botaoTema {
   background-color: var(--bg-tertiary);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
   transition: all var(--transition-fast);
 }
 
-.themeBtn:hover {
+.botaoTema:hover {
   border-color: var(--border-hover);
   transform: scale(1.05);
 }
 
-.themeIcon {
+.temaIcone {
   width: 24px;
   height: 24px;
 }

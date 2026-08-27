@@ -38,7 +38,6 @@
   --transition-fast: 0.2s ease;
 }
 
-/* Sobrescrita para o Modo Escuro (Dark Mode) */
 [data-theme="dark"] {
   --bg-primary: #0f172a;        
   --bg-secondary: #1e293b;      
