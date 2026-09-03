@@ -4,7 +4,7 @@ function Placar({ scoreX, scoreO }) {
     return (
         <div className={styles.placarContainer}>
             <div className={styles.placarItem}>
-                <span className={styles.placarLabel}>X: </span>
+                <span className={styles.placarLabel}>Jogador X: </span>
                 <span className={styles.placarScore}>{scoreX}</span>
             </div>
             <div className={styles.placarItem}>
@@ -12,7 +12,7 @@ function Placar({ scoreX, scoreO }) {
                 <span className={styles.placarScore}>0</span>
             </div>
             <div className={styles.placarItem}>
-                <span className={styles.placarLabel}>O: </span>
+                <span className={styles.placarLabel}>Jogador O: </span>
                 <span className={styles.placarScore}>{scoreO}</span>
             </div>
         </div>
