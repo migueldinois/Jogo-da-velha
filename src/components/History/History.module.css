@@ -1,0 +1,11 @@
+.historyContainer {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid var(--border-color);
+    background-color: var(--bg-primary);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+    height: 80vh;
+}
