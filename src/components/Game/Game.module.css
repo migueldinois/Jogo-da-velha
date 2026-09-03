@@ -36,16 +36,6 @@
   align-items: center;
 }
 
-.blocoPlacar {
-  border: 2px solid var(--border-color);
-  border-radius: 10px;
-  padding: 10px 20px;
-}
-
-.tabuleiroWrapper {
- 
-}
-
 
 
 
@@ -77,4 +67,11 @@
 
 .gameInfo button:hover {
   background-color: var(--bg-primary-hover);
+}
+
+.historyItem {
+  background-color: var(--bg-primary);
+  padding: 10px;
+  border: 1px solid var(--border-color);
+
 }

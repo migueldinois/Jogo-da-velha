@@ -5,6 +5,7 @@ import { useState } from 'react';
 import Header from '../Header/Header.jsx';
 import '../../styles/variables.css'
 import styles from './Game.module.css'
+import Placar from '../Placar/Placar.jsx'
 
 function Game() {
     const [history, setHistory] = useState([Array(9).fill(null)]);
@@ -30,6 +31,7 @@ function Game() {
         }
     }
 
+
     function jumpTo(nextMove) {
         setCurrentMove(nextMove);
     }
@@ -41,7 +43,7 @@ function Game() {
             description = 'Ir para o início do jogo';
         }
         return (
-            <li key={move}>
+            <li className={styles.historyItem} key={move}>
                 <button onClick={() => jumpTo(move)}>{description}</button>
             </li>
         );
@@ -93,7 +95,7 @@ function Game() {
 
 
                             <div className={styles.conteudoPartida}>
-                                <div className={styles.blocoPlacar}><strong>X: {scoreX}</strong> | <strong>O: {scoreO}</strong></div>
+                                <Placar scoreX={scoreX} scoreO={scoreO} />
                                 <div className={styles.tabuleiroWrapper}>
                                     <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
                                 </div>
