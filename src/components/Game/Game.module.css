@@ -70,8 +70,10 @@
 }
 
 .historyItem {
-  background-color: var(--bg-primary);
+  background-color: var(--bg-tertiary);
   padding: 10px;
   border: 1px solid var(--border-color);
+  color : var(--text-primary);
+  border-radius: 5px;
 
 }
