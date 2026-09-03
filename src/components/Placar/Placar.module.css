@@ -1,0 +1,31 @@
+.placarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  border: 2px solid var(--border-color);
+  margin-bottom: 20px;
+  background-color: var(--bg-primary);
+}
+
+.placarItem {
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.placarItem strong {
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.placarLabel {
+  font-weight: bold;
+  color: var(--text-secondary);
+}
+
+.placarScore {
+
+  color: var(--text-primary);
+}
