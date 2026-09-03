@@ -1,4 +1,8 @@
-function History(){
-    return <h1>History está funcionando</h1>
+function History({ moves }) {
+    return (
+        <div className="game-info">
+            <ol>{moves}</ol>
+        </div>
+    );
 }
 export default History

@@ -11,3 +11,16 @@
   justify-content: center;
   align-items: center;
 }
+
+
+/* COntainer das acoes */
+.acoesContainer {
+  display: flex;
+  gap: 10px; 
+}
+
+.acoesContainer div {
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  padding: 5px 15px;
+}

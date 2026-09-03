@@ -23,7 +23,8 @@ function calculateWinner(squares) {
   return null;
 }
 
-function Board({ xIsNext, squares, onPlay }) {
+
+function Board({ xIsNext, squares, onPlay, scoreX, scoreO }) {
   function handleClick(i) {
     if (calculateWinner(squares) || squares[i]) {
       return;
@@ -41,7 +42,12 @@ function Board({ xIsNext, squares, onPlay }) {
   let status;
   if (winner) {
     status = 'Ganhador: ' + winner;
-  } else {
+    
+  }else if (!squares.includes(null)) {
+    status = 'Empate!';
+  }
+  
+  else {
     status = 'Próximo Jogador: ' + (xIsNext ? 'X' : 'O');
   }
 
@@ -68,5 +74,6 @@ function Board({ xIsNext, squares, onPlay }) {
     </>
   );
 }
+
 
 export default Board
