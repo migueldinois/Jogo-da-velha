@@ -1,28 +1,87 @@
-
 .gameContainer {
   background-color: var(--bg-secondary);
   border-bottom: 1px solid var(--border-color);
   box-shadow: var(--shadow-sm);
-  height: 92vh;
+  height: calc(100vh - 60px); 
+  overflow: hidden; 
   
   transition: background-color var(--transition-fast);
-  display: flex;
-  justify-content: space-between;
 }
+
 
 .titulo {
   color: var(--text-primary);
   font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.tabuleiroContainer {
-    background-color: var(--bg-primary);
-    width: 100%;
-    min-height: 400px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+
+.secaoPartida {
+  background-color: var(--bg-primary);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.conteudoPartida {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; 
+  align-items: center;
+}
+
+.blocoPlacar {
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.tabuleiroWrapper {
+ 
+}
+
+.acoesContainer {
+  display: flex;
+  gap: 10px; 
+}
+
+.acoesContainer div {
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  padding: 5px 15px;
+}
+
+
+
+.secaoHistorico {
+  padding: 20px;
+  overflow-y: auto; 
+}
+
+
+.gameInfo ol {
+  list-style: none; 
+  padding: 0;
+}
+
+.gameInfo li {
+  margin-bottom: 10px;
+}
+
+.gameInfo button {
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.gameInfo button:hover {
+  background-color: var(--bg-primary-hover);
 }

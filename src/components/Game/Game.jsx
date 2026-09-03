@@ -39,27 +39,40 @@ function Game() {
         <>
             <Header></Header>
             <main>
-                <div className={` ${styles.gameContainer}`}>
-                    <div className='row'>
-                        {/* Tabuleiro */}
-                        <div className={`col-12 col-md-6 mb-3 ${styles.tabuleiroContainer}`}>
-                            <div>
-                                <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
+                <div className={`${styles.gameContainer}`}>
+
+                    <div className='row'> 
+                        {/* Partida  */}
+                        <div className={`col-12 col-md-8 ${styles.secaoPartida}`}>
+                            <h2 className={styles.titulo}>Partida</h2>
+
+                            
+                            <div className={styles.conteudoPartida}>
+                                <div className={styles.blocoPlacar}>Placar</div>
+                                <div className={styles.tabuleiroWrapper}>
+                                    <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
+                                </div>
+                                <div className={styles.acoesContainer}>
+                                    <div>Placar</div>
+                                    <div>Placar</div>
+                                    <div>Placar</div>
+                                </div>
                             </div>
                         </div>
 
                         {/* Historico */}
-                        <div className="col-12 col-md-6">
+                        <div className={`col-12 col-md-4 ${styles.secaoHistorico}`}>
+                            <h2 className={styles.titulo}>Histórico</h2>
                             <div className="game-info">
                                 <ol>{moves}</ol>
                             </div>
                         </div>
-                    </div>
+
+                    </div> 
                 </div>
             </main>
         </>
     );
 }
-
 
 export default Game
