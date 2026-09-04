@@ -23,7 +23,6 @@ function calculateWinner(squares) {
   return null;
 }
 
-
 function Board({ xIsNext, squares, onPlay, scoreX, scoreO }) {
   function handleClick(i) {
     if (calculateWinner(squares) || squares[i]) {
@@ -39,21 +38,32 @@ function Board({ xIsNext, squares, onPlay, scoreX, scoreO }) {
   }
 
   const winner = calculateWinner(squares);
-  let status;
-  if (winner) {
-    status = 'Ganhador: ' + winner;
-    
-  }else if (!squares.includes(null)) {
-    status = 'Empate!';
-  }
-  
-  else {
-    status = 'Próximo Jogador: ' + (xIsNext ? 'X' : 'O');
-  }
+  const isDraw = !winner && !squares.includes(null);
+  const isGameOver = winner || isDraw;
 
   return (
     <>
-      <div className="status">{status}</div>
+      <div className={styles.statusContainer}>
+        {/* Campo do Resultado (Aparece só se alguem ganhar ou empatar) */}
+        {isGameOver && (
+          <div className={`${styles.resultado} ${winner ? styles.ganhador : styles.empate}`}>
+            {winner ? (
+              <>
+                Ganhador: <span className={winner === 'X' ? styles.x : styles.o}>{winner}</span>
+              </>
+            ) : (
+              'Empate!'
+            )}
+          </div>
+        )}
+        {/* Campo do Proximo Jogador (Aparece só se o jogo nao acabou) */}
+        {!isGameOver && (
+          <div className={styles.proximoJogador}>
+            Próximo Jogador: <span className={xIsNext ? styles.x : styles.o}>{xIsNext ? 'X' : 'O'}</span>
+          </div>
+        )}
+      </div>
+
       <div className={styles.tabuleiroContainer}>
         <div className={styles.boardRow}>
           <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
@@ -75,5 +85,4 @@ function Board({ xIsNext, squares, onPlay, scoreX, scoreO }) {
   );
 }
 
-
-export default Board
+export default Board;

@@ -44,7 +44,7 @@ function Game() {
         }
         return (
             <li className={styles.historyItem} key={move}>
-                <button onClick={() => jumpTo(move)}>{description}</button>
+                <button className={styles.botaoHistorico} onClick={() => jumpTo(move)}>{description}</button>
             </li>
         );
 
@@ -100,8 +100,8 @@ function Game() {
                                     <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
                                 </div>
                                 <div className={styles.acoesContainer}>
-                                    <button className={styles.botaoAcao} onClick={resetarJogo}>Reiniciar</button>
-                                    <button className={styles.botaoAcao} onClick={zerarPlacar}>
+                                    <button className={styles.botaoReiniciar} onClick={resetarJogo}>Reiniciar</button>
+                                    <button className={styles.botaoZerarPlacar} onClick={zerarPlacar}>
                                         Zerar Placar
                                     </button>
                                 </div>

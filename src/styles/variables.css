@@ -1,23 +1,39 @@
-
 :root {
   /* Cores de Fundo (Backgrounds) */
-  --bg-primary: #f8fafc;        /* Fundo principal da aplicação */
-  --bg-secondary: #ffffff;      /* Fundo de cards/tabuleiro */
-  --bg-tertiary: #f1f5f9;       /* Fundo para elementos em hover/destaque */
-  
+  --bg-primary: #f8fafc;
+  /* Fundo principal da aplicação */
+  --bg-secondary: #ffffff;
+  /* Fundo de cards/tabuleiro */
+  --bg-tertiary: #f1f5f9;
+  /* Fundo para elementos em hover/destaque */
+
   /* Cores de Texto */
-  --text-primary: #0f172a;      /* Texto principal de alto contraste */
-  --text-secondary: #475569;    /* Subtítulos e textos de menor destaque */
-  --text-muted: #94a3b8;        /* Rótulos desabilitados */
-  
+  --text-primary: #0f172a;
+  /* Texto principal de alto contraste */
+  --text-secondary: #475569;
+  /* Subtítulos e textos de menor destaque */
+  --text-muted: #94a3b8;
+  /* Rótulos desabilitados */
+
   /* Bordas */
-  --border-color: #e2e8f0;      /* Linhas do tabuleiro e divisores */
-  --border-hover: #cbd5e1;      /* Bordas ao passar o mouse */
+  --border-color: #e2e8f0;
+  /* Linhas do tabuleiro e divisores */
+  --border-hover: #cbd5e1;
+  /* Bordas ao passar o mouse */
 
   /* Identidade Visual do Jogo */
-  --color-player-x: #2563eb;    /* Azul para o Jogador X */
-  --color-player-o: #dc2626;    /* Vermelho para o Jogador O */
-  --color-accent: #16a34a;      /* Verde para destaque de vitória */
+  --color-player-x: #2563eb;
+  /* Azul para o Jogador X */
+  --color-player-o: #dc2626;
+  /* Vermelho para o Jogador O */
+  --color-accent: #16a34a;
+  /* Verde para destaque de vitória */
+  --color-accent-hover: #15803d;
+  /* Verde escuro para hover em botões de vitória */
+  --color-warning: #f59e0b;
+  /* Amarelo para alertas ou empates */
+  --color-warning-hover: #d97706;
+  /* Amarelo escuro para hover em botões de alerta */
 
   /* Sombras (Sombreamento suave) */
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
@@ -39,20 +55,26 @@
 }
 
 [data-theme="dark"] {
-  --bg-primary: #0f172a;        
-  --bg-secondary: #1e293b;      
-  --bg-tertiary: #334155;       
-  
-  --text-primary: #f8fafc;      
-  --text-secondary: #cbd5e1;    
-  --text-muted: #64748b;        
-  
-  --border-color: #26303f;      
+  --bg-primary: #0f172a;
+  --bg-secondary: #1e293b;
+  --bg-tertiary: #334155;
+
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #64748b;
+
+  --border-color: #26303f;
   --border-hover: #475569;
 
-  --color-player-x: #60a5fa;    
-  --color-player-o: #f87171;    
-  --color-accent: #4ade80;      
+  --color-player-x: #60a5fa;
+  --color-player-o: #f87171;
+  --color-accent: #4ade80;
+  --color-accent-hover: #15803d;
+  /* Verde escuro para hover em botões de vitória */
+  --color-warning: #f59e0b;
+  /* Amarelo para alertas ou empates */
+  --color-warning-hover: #d97706;
+  /* Amarelo escuro para hover em botões de alerta */
 
   --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
   --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
